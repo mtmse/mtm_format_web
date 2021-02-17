@@ -1,0 +1,9 @@
+{
+    "routes": [
+        {
+            "route": "/nordic_epub/latest",
+            "serve": "/nordic_epub/2020-1",
+            "statusCode": 301
+        }
+    ]
+}

@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="dcterms.date" content="2021-02-16" />
-  <title>Hello world!</title>
+  <meta name="dcterms.date" content="2021-02-17" />
+  <title>Nordic Guidelines for the Production of Accessible EPUB 3</title>
   <style>
+
+    /* Pandoc default styles.html rules */
+    
     html {
       line-height: 1.7;
       font-family: Georgia, serif;
@@ -181,6 +184,57 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+    /* Nordic guidelines additional rules */
+    .infobox {
+	padding-bottom: 0;
+	margin-bottom: 0;
+    }
+
+    .credits, .downloads {
+	font-size: smaller;
+	text-align: left;
+    }
+
+    .credits ul {
+	display: inline;
+	list-style: none;
+	padding-left: 0;
+    }
+
+    .credits li {
+	display: inline;
+    }
+
+    .credits ul li:not(:last-child):after {
+	content: ", ";
+    }
+
+    hr.separator {
+	margin: 100px 0;
+    }
+
+    hr.separator:after {
+	content: "🙙";
+	font-size: 1.75em;
+	color: black;
+	left: 50%;
+	position: absolute;
+	transform: translateY(-50%) translateX(-50%);
+	/* Controls the whitespace around the symbol */
+	padding: 40px;
+	background: #fdfdfd;
+    }
+
+    footer {
+	font-size: smaller;
+    }
+
+    .version-history {
+	font-size: smaller;
+	font-style: italics;
+	margin-top: -1em;
+    }
   </style>
   <link rel="stylesheet" href=".\epub3-guidelines-update\guidelines\doc_tools\standard_html.css" />
   <!--[if lt IE 9]>
@@ -192,9 +246,15 @@
   
 </head>
 <body>
-<header id="title-block-header">
-  <h1>Placeholder for nordic epub root</h1>
-</header>
+  <h1>Nordic Guidelines for the Production of Accessible EPUB 3</h1>
+  <p>The <cite>Nordic Guidelines for the Production of Accessible EPUB 3</cite> is a joint effort between the (mostly) Nordic agencies dedicated to providing accessible literature in different formats to children and adults with various reading impairments or special needs. The guidelines provide an application of EPUB 3 for the purposes of the production of accessible books carried out at the Nordic agencies.</p>
+  <p>The target audience of these documents is mainly contracted EPUB 3 suppliers, but the guidelines will also be used by staff at the Nordic agencies, other vendors and interested parties, etc.</p>
+  <p>The Nordic Guidelines are hosted by <a href="https://www.mtm.se/">MTM, the Swedish Agency for Accessible Media</a>.</p>
+  <h2>Available versions of the Nordic Guidelines</h2>
+  <dl>
+    <dt><a href="2020-1/">2020-1</a> (latest version)</dt><dd>This document is the successor of the previous EPUB 3 guidelines used by the Nordic agencies (2015-1), and is based on the most recent EPUB 3 specification, <a href="https://www.w3.org/publishing/epub3/epub-spec.html">EPUB 3.2</a>.</dd>
+    <dt><a href="2015-1/">2015-1</a></dt><dd>This is the predecessor of the 2020-1 Nordic Guidelines, and was based on <a href="http://idpf.org/epub/30/spec/epub30-overview-20111011.html">EPUB 3.0</a>.<dd>
+  </dl>
 </body>
 </html>
 

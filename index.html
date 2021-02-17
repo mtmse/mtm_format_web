@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="dcterms.date" content="2021-02-16" />
-  <title>Hello world!</title>
+  <meta name="dcterms.date" content="2021-02-17" />
+  <title>Accessible format specifications hosted by MTM</title>
   <style>
+
+    /* Pandoc default styles.html rules */
+    
     html {
       line-height: 1.7;
       font-family: Georgia, serif;
@@ -181,6 +184,57 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+    /* Nordic guidelines additional rules */
+    .infobox {
+	padding-bottom: 0;
+	margin-bottom: 0;
+    }
+
+    .credits, .downloads {
+	font-size: smaller;
+	text-align: left;
+    }
+
+    .credits ul {
+	display: inline;
+	list-style: none;
+	padding-left: 0;
+    }
+
+    .credits li {
+	display: inline;
+    }
+
+    .credits ul li:not(:last-child):after {
+	content: ", ";
+    }
+
+    hr.separator {
+	margin: 100px 0;
+    }
+
+    hr.separator:after {
+	content: "🙙";
+	font-size: 1.75em;
+	color: black;
+	left: 50%;
+	position: absolute;
+	transform: translateY(-50%) translateX(-50%);
+	/* Controls the whitespace around the symbol */
+	padding: 40px;
+	background: #fdfdfd;
+    }
+
+    footer {
+	font-size: smaller;
+    }
+
+    .version-history {
+	font-size: smaller;
+	font-style: italics;
+	margin-top: -1em;
+    }
   </style>
   <link rel="stylesheet" href=".\epub3-guidelines-update\guidelines\doc_tools\standard_html.css" />
   <!--[if lt IE 9]>
@@ -192,10 +246,12 @@
   
 </head>
 <body>
-<header id="title-block-header">
-  <h1>Hello world!</h1>
-  <p>Hello world!</p>
-</header>
+  <h1>Accessible format specifications hosted by MTM</h1>
+  <p>This is the home of accessible format specifications hosted by <a href="https://www.mtm.se/">MTM, the Swedish Agency for Accessible Media</a>.</p>
+  <h2>Available specifications</h2>
+  <dl>
+    <dt><a href="nordic_epub/"><cite>Nordic Guidelines for the Production of Accessible EPUB 3</cite></a></dt><dd>A joint effort between the (mostly) Nordic Agencies dedicated to providing accessible literature in different formats to children and adults with various reading impairments or special needs.<dd>
+  </dl>
 </body>
 </html>
 

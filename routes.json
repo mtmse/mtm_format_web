@@ -5,10 +5,5 @@
             "serve": "/nordic_epub/2020-1",
             "statusCode": 301
         }
-	{
-            "route": "/",
-            "serve": "/nordic_epub",
-            "statusCode": 301
-        }
     ]
 }

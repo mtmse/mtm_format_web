@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="dcterms.date" content="2021-02-16" />
-  <title>Hello world!</title>
+  <meta name="dcterms.date" content="2021-02-17" />
+  <title>Requirements for Quality Content Production in EPUB 3.0/XHTML (Nordic Guidelines 2015-1)</title>
   <style>
+
+    /* Pandoc default styles.html rules */
+    
     html {
       line-height: 1.7;
       font-family: Georgia, serif;
@@ -181,6 +184,57 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+    /* Nordic guidelines additional rules */
+    .infobox {
+	padding-bottom: 0;
+	margin-bottom: 0;
+    }
+
+    .credits, .downloads {
+	font-size: smaller;
+	text-align: left;
+    }
+
+    .credits ul {
+	display: inline;
+	list-style: none;
+	padding-left: 0;
+    }
+
+    .credits li {
+	display: inline;
+    }
+
+    .credits ul li:not(:last-child):after {
+	content: ", ";
+    }
+
+    hr.separator {
+	margin: 100px 0;
+    }
+
+    hr.separator:after {
+	content: "🙙";
+	font-size: 1.75em;
+	color: black;
+	left: 50%;
+	position: absolute;
+	transform: translateY(-50%) translateX(-50%);
+	/* Controls the whitespace around the symbol */
+	padding: 40px;
+	background: #fdfdfd;
+    }
+
+    footer {
+	font-size: smaller;
+    }
+
+    .version-history {
+	font-size: smaller;
+	font-style: italics;
+	margin-top: -1em;
+    }
   </style>
   <link rel="stylesheet" href=".\epub3-guidelines-update\guidelines\doc_tools\standard_html.css" />
   <!--[if lt IE 9]>
@@ -192,9 +246,23 @@
   
 </head>
 <body>
+
 <header id="title-block-header">
-  <h1>Placeholder for 2015-1 root</h1>
+<h1 class="title">Requirements for Quality Content Production in EPUB 3.0/XHTML</h1>
+<p class="version">Version 2015-1</p>
+<p class="version-history">(<a href="https://format.mtm.se/nordic_epub">version history</a>)</p>
+<div class="infobox">
+
+<section class="downloads">
+<h2>Document download formats</h2>
+<ul>
+  <li><a href="nordic_guidelines_epub3-2015-1.pdf">PDF</a></li>
+</ul>
+</section>
+</div>
 </header>
+<hr class="separator"/>
+<p>This document is the predecessor of the <a href="../2020-1">2020-1 Nordic Guidelines</a>, and is based on <a href="http://idpf.org/epub/30/spec/epub30-overview-20111011.html">EPUB 3.0</a>.</p>
 </body>
 </html>
 
